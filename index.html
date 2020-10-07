@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Hello</h1>
-    <script></script>
-    <script></script>
-    <script></script>
+    <div id="titlebar">
+        <h1>Caviar Rush</h1>
+    </div>
+    <div id="searchBar">
+        <header class="hero-search-filter">
+            <div class="hero-search-filter-content">
+              
+              <form class="hero-search-filter-form" action="">
+                
+                <label for="findlocate">Destination</label>
+                <input id="findlocate" class="hero-search-filter-form-near" type="text" />
+                <button class="button"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </header>          
+    </div>
+    <div id="destName" class="hidden"></div>
+    <div id="weatherDiv" class="hidden"></div>
+    <div id="foodDiv"></div>
+    <div id="barDiv"></div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
