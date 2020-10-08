@@ -17,16 +17,22 @@
     <div id="searchBar">
         <header class="hero-search-filter">
             <div class="hero-search-filter-content">
-
-                <form class="hero-search-filter-form" action="">
-
-                    <label for="findlocate">Destination</label>
-                    <input id="findlocate" class="hero-search-filter-form-near" type="text" />
-                    <button id= "searchBTN" class="button">Search<i class="fa fa-search"></i></button>
-                </form>
+              
+              <form class="hero-search-filter-form" action="">
+                <label for="findlocate">Destination|</label>
+                <input id="findlocate" class="hero-search-filter-form-near" type="text" />
+                <button class="button"><i class="fa fa-search"></i></button>
+              </form>
             </div>
         </header>
     </div>
+
+    <div id="destName" class="hidden">
+        <h1 id="destination"></h1>
+    </div>
+    <div id="weatherDiv" class="hidden"></div>
+    <div id="foodDiv"></div>
+
     <div id="destName" class="hidden"><h1 id= "destination"></h1></div>
     <div id="weatherDiv" class="hidden"><h2 id="degrees"></h2></div>
     <div id="foodDiv"><div class="travel-feature-card">
@@ -64,9 +70,18 @@
           </div> 
         </div>
       </div></div>
+
     <div id="barDiv"></div>
+
+
+   
+
+    <button class="button">Submit</button>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
     <script src="script.js"></script>
 </body>
 
