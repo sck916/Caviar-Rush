@@ -46,17 +46,27 @@ function apiSmack(settings) {
 
     for (var i = 0; i < 5; i++) {
       // 1 make a piece of html with jquery
-      var resterauntContainer = $('<div>')
-      var resterauntTitle = $('<h1>')
+
+      var resterauntContainer = $("<div class = 'placeContainer'>");
+      var resterauntTitle = $('<h2>')
+      var resterauntImage = $('<img>')
       var phone = $('<p>')
+      var getimgUrl = response.businesses[i].image_url;
+      
       //2 dress it up how u want classess text ect.
+
       resterauntTitle.text(response.businesses[i].name)
+      resterauntImage.attr("src", getimgUrl);
+      resterauntImage.addClass("images");
+
+      console.log("I got through after setting the image attribute");
       phone.text(response.businesses[i].display_phone)
       phone.addClass('phone')
       resterauntContainer.addClass('searchResult-Container')
 
       //3 .append that sucker to the page!!
-      resterauntContainer.append(resterauntTitle, phone)
+      
+      resterauntContainer.append(resterauntTitle, resterauntImage, phone);
       $('#foodDiv').append(resterauntContainer)
     }
   })
@@ -69,6 +79,7 @@ searchBTN.on("click", function (e) {
   var cityName = searchInput.val();
   getBreweries(cityName)
   getFood(cityName)
+
 });
 
 //   var settings2 = {
@@ -94,7 +105,7 @@ searchBTN.on("click", function (e) {
 
 /* var cityName = searchInput.val(); */
 
-/* var queryurl= "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=" + cityName+"&appid=vIvEN8jcE-vIxP2rqSxSj4eBClBASSxHExYLte4QRR5hbMHGYj6mHwdW9zQ7RKyCvM70Xt20DAuBOnUIndmCrpowMyqr2hZE0Lvw70Zy8n0bhm5dWJMMtoxejIJ7X3Yx"
+/* var queryurl= "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=" + cityName +"&appid=vIvEN8jcE-vIxP2rqSxSj4eBClBASSxHExYLte4QRR5hbMHGYj6mHwdW9zQ7RKyCvM70Xt20DAuBOnUIndmCrpowMyqr2hZE0Lvw70Zy8n0bhm5dWJMMtoxejIJ7X3Yx"
 
 $.ajax({
     url: queryurl,

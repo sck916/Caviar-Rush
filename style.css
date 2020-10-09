@@ -119,18 +119,23 @@
     border: 0;
     box-shadow: none;
   }
-  
-  #resturaunt_1{
+  .images{
+    height: 141px;
+    width: 180px;
+  }
+  .placeContainer{
     background-color: #E8E8E8;
-    height: 280px;
-    margin: 100px;
+    height: 322px;
+    margin: 41px;
     border-top: 15px solid black;
     box-shadow: 0 0 5px;
     padding: 5px;
+    width: 814px;
+    text-align: left;
   }
 
   .phone  {
-    color: blue
+    color: red
   }
 
   .searchResult-Container {
