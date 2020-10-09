@@ -46,6 +46,7 @@ function apiSmack(settings) {
 
     for (var i = 0; i < 5; i++) {
       // 1 make a piece of html with jquery
+
       var resterauntContainer = $("<div class = 'placeContainer'>");
       var resterauntTitle = $('<h2>')
       var resterauntImage = $('<img>')
@@ -64,6 +65,7 @@ function apiSmack(settings) {
       resterauntContainer.addClass('searchResult-Container')
 
       //3 .append that sucker to the page!!
+      
       resterauntContainer.append(resterauntTitle, resterauntImage, phone);
       $('#foodDiv').append(resterauntContainer)
     }
