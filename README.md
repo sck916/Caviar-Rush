@@ -1,26 +1,27 @@
 # Caviar-Rush
  https://sck916.github.io/Caviar-Rush/
  
- Team Members
+# Team Members
 
 Zach Smelcer - (https://github.com/zsmeltz147)
-Daniel Viramontes - (https://github.com/zsmeltz147)
+Daniel Viramontes - (https://github.com/danielviram)
 Steve Kavuu - (https://github.com/sck916)
 
-Project Description
+# Project Description
 
-Our app takes users destinations and returns to them them current weather in that city as well as a list of resturants and breweries. Along with the results we give an estimated price, rating ,review count ,phone number and address.
+User enters their destination and it returns the current weather in the entered destination along with a list of popular restaurants and breweries in the area. Along with the list of restaurants and breweries the estimated price, ratings ,review count, phone number and address are displayed next to the establishment.
 
-Built with
+# Built with the following languages:
 
-HTML, CSS
-Javascript and jQuery
-Foundation
-Google Fonts
+HTML
+CSS
+Javascript 
+jQuery
 
 
-APIs used 
 
-Yelp API
-openweathermap API
+# APIs used:
+
+Yelp 
+openweathermap 
 
