@@ -11,49 +11,35 @@
 </head>
 
 <body>
-    <div id="titlebar">
-        <h1>Caviar Rush</h1>
+    <div id="titlebar" >
+        <h1 id="nameplate">Caviar/Rush</h1>
     </div>
+    <br>
+    <br>
     <div id="searchBar">
-        <header class="hero-search-filter">
-            <div class="hero-search-filter-content">
-              
-              <form class="hero-search-filter-form" action="">
-                <label for="findlocate">Destination|</label>
-                <input id="findlocate" class="hero-search-filter-form-near" type="text" />
-                
-              </form>
-
-              <button id="searchBTN"class="button"><i class="fa fa-search"></i></button>
+        <div class="input-group input-group-rounded">
+            <input id="findlocate" class="input-group-field" type="search" value="Search for any city...">
+            <div class="input-group-button">
+              <input  id= "searchBTN" type="submit" class="button secondary" value="Search">
             </div>
-        </header>
+          </div>
+       
     </div>
-
+<br>
+<br>
+<div id="cityInfos">
     <div id="destName">
-        <h1 id="destination"></h1>
+        <h1 id= "destination"></h1>
     </div>
-    <div id="weatherDiv"></div>
+
+    <div id="weatherDiv">
+        <h2 id="degrees"></h2>
+    </div>
+</div>
+<br>
+<br>
     <div id="foodDiv">
-        
     </div>
-
-    <div id="destName"><h1 id= "destination"></h1></div>
-    <div id="weatherDiv"><h2 id="degrees"></h2></div>
-    
-    <div id="barDiv">
-      <div id="bar_1">
-        
-      </div>
-      <div id="bar_2"></div>
-      <div id="bar_3"></div>
-      <div id="bar_4"></div>
-      <div id="bar_5"></div>
-    </div>
-
-
-   
-
-   
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"
